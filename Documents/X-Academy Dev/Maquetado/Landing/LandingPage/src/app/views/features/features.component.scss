@@ -1,0 +1,141 @@
+.feature {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px ;
+    color:#6f7880;
+    font-weight:600;
+}
+.feature i {
+    border: none 2px #2e86fd;
+    font-size: 45px;
+}
+
+.foot {
+    position:absolute;
+    text-align: left;
+    font-size: 21px;
+}   
+.feature h4 {
+    margin: 0;
+    font-size: 24px;
+    font-style: inherit;
+}
+
+.center { margin-left: auto;
+          margin-right: auto;
+}
+
+table {
+    margin-top: 2px;
+    justify-content: center;
+    background-color:aliceblue;
+    object-position: center;
+    border-radius: 5px;
+    table-layout: fixed;
+    text-align: center;
+    td {
+        color: indigo;
+        font-size: larger;
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding: 15px 0;
+        border-color: blue;
+        border-radius: 5px;
+        background-color: lightblue;
+        opacity: 0.7;
+    }
+    th {
+        border-left: #2e86fd;
+        padding: 15px 0;
+        color: #2e86fd;
+        font-size: 30px;
+        font-weight: 600;
+     }
+}
+
+#position {
+    margin-top: 150px;
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightblue;
+    width: 500px;
+    height: 220px;
+    border-left: none;
+    border-right: solid 5px orange;
+    p {
+        color: black;
+        font-size: 12px;
+        text-align: left;
+        font-weight: 600;
+        justify-content: flex-start;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+}
+
+
+button {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 60%;
+    margin-top: 0cap;
+    height: 50px;
+    border: none;
+    justify-items: left;
+    background-color: #fa593c;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.swell {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.feature p {
+    color: #6f7880;
+    font-size: 18px;
+}
+
+.features {
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+i {
+    color: #2e86fd;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 200px;
+    text-align: center;
+    color: #6f7880;
+    font-size: 18px;
+}

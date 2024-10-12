@@ -1,0 +1,79 @@
+.pricing-form {
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343f44;
+    height: calc(1.5em + 0.75rem + 1px);
+    border-radius: 5px;
+}
+
+.form-field {
+    margin-bottom: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: block;
+    color: #343f44;
+}
+
+footer {
+    margin-top: 450px;
+    display: grid;
+    text-align: center; 
+    color: #6f7880;
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+}
+
+input {
+     width: 100%;
+}
+label {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343f44;
+}
+.form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343f44;
+    height: calc(1.5em + 0.75rem + 1px);
+    border-radius: 5px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #fa593c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+:hover {
+    .form-button {
+        cursor: pointer;
+        border-color: #2e86fd;
+    }
+    .form-control {
+        cursor: pointer;
+    }
+    .pricing-form {
+        cursor: pointer;
+    }
+}
+

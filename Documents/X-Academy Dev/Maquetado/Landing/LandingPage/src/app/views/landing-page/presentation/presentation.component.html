@@ -1,0 +1,18 @@
+<section class="presentation"> <br />
+    <br />
+    <span class="pre-title">Present your service</span>
+    <h1>Make Landing Pages <br /> fast & easily</h1>
+    <span class="post-title">Create custom landing pages with Shades that convert <br />
+        more visitors than any website. No coding required.</span>
+    <form class="subscribe-form">
+        <input type="email" name="email" placeholder="Enter your email here" pattern=".+globex.com" [(ngModel)]="formModel.email"required email #emailControl="ngModel"  [ngClass]="{'is-invalid': emailControl.invalid && emailControl.dirty}" />
+        <button type="button" (click)="updateEmail()">Subscribe</button>
+    </form>
+    <!--<p class="secondary-p">{{emailControl.value}}</p>-->
+    <div *ngIf="emailControl.invalid && emailControl.dirty" class="invalid-feedback">
+        <div *ngIf="emailControl && emailControl.value !== '' && emailControl.invalid">Email is required</div>
+        <div *ngIf="emailControl.value !== '' && emailControl.invalid">Email must be a valid email address</div>
+    </div>
+    <br />
+    <em><p class="secondary-p">Trusted by over 50,000+ customers</p></em>
+</section>

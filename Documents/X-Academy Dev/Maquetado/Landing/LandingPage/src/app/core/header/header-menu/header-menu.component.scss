@@ -1,0 +1,34 @@
+.menu {
+    flex-grow: 2;
+    color: #343f44;
+    margin-left: 80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+
+.menu ul li {
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.menu li {
+    margin-right: 30px;
+    font-weight: 600;
+
+    a {
+        text-decoration: none;
+        color: #343f44;
+    }
+
+    a.active {
+        color: beige;
+        background-color: #fa593c;
+        padding: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+}

@@ -1,0 +1,32 @@
+
+<h1>Our features</h1> <br/>
+<table width="75%" border="1" cellspacing="0" cellpadding="0" class="center">
+    <tr>
+        <th>Feature</th>
+        <th>Price</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Free</td>
+        <td>For Free!</td>
+        <td>For Small Projects</td>
+    </tr>
+    <tr>
+        <td>Extra</td>
+        <td>$50</td>
+        <td>For Medium Projects</td>
+    </tr>
+    <tr>
+        <td>Premium</td>
+        <td>$1500</td>
+        <td>For Large Projects</td>
+    </tr>
+</table>
+
+<section class="features">
+    <app-icon-card *ngFor="let feature of features" [icon]="feature.icon" [title]="feature.title"
+        [description]="feature.description"></app-icon-card>
+</section>
+<br/><h2 id="position" class="center"> Lets get in touch!<p>Shades is the best landing page builder for all your needs and it's commited to making your landing page as fast as possible. <br /> Our team's goal is to help you get the best experience possible and get the best land- ing page for your website.<br/> What are you waiting for! Just pick the one that suits you perfect and choose the feature that suits your needs and we will help in making the best possible landing page for your website. </p> <span class="foot">Get in touch with us now!</span>
+   <a href="http://localhost:4200/contact"><button type="button" class="swell">Contact Us!</button></a></h2>
+<footer> © 2022 Shades. All rights reserved.</footer>

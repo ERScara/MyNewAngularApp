@@ -1,0 +1,33 @@
+<section class="pricing-form" exclude="ngForm">
+    <form>
+      <div>
+        <div class="form-field"> <br />
+            <label for="feature">Feature </label> 
+            <select id="feature" class="form-control" required><option *ngFor="let feature of features" [title]="feature.title" [value]="feature.id" [selected]="true">{{feature.title}}</option></select>
+        </div>
+      </div>
+        <div class="form-field">
+            <label for="count">Quantity </label>
+            <input type="number" id="count" class="form-control" required min="0" max="20"/>
+            <script type="text/javascript">
+                const countInput = document.getElementById('count');
+                countInput.addEventListener('keydown', (event) => {
+                    if (event.key === '-' || event.keyCode === 109) {
+                        event.preventDefault(); // Prevent the minus sign from being entered
+                    }
+                });
+            </script>
+        </div>
+        <div class="form-field">
+            <label for="price">Price </label>
+            <select type="price" id="price" class="pricing-form" required [(ngModel)]="selectedFeature" name="selectedFeature"><option *ngFor="let feature of features" [value]="price" [selected]="true">{{feature.price}}</option></select>
+        </div>
+        <br />
+        <button type="submit" class="form-button">Order Now!</button>
+    </form>
+</section>
+<br />
+
+
+<footer> © 2022 Shades. All rights reserved.</footer>
+    

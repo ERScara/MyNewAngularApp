@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container {
+display: block; 
+width: fit-content;
+padding: 20px 70px;
+background-color: #eeeccc;
+border-radius: 20px;
+margin: 0 auto;
+}
+
+.foot {
+    margin-top: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.level {
+    display: flex;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 50%;
+}
+footer{
+    margin-top: 100px;
+    text-align: center;
+    color: #6f7880;
+    font-size: 18px;
+}

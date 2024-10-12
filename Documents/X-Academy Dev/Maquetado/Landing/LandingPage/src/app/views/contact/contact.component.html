@@ -1,0 +1,27 @@
+<h3>Contact Us</h3>
+<p>Fill out the form below and we will get back to you as soon as possible.</p>
+<section class="contact-forms">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <div class="form-input"> <br />
+            <label for="email">Email</label>  
+            <input type="email" placeholder="Enter your email here" id="email" name="email" pattern=".+globex.com" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="formModel.email" required email  #emailControl="ngModel" [ngClass]="{'is-invalid': emailControl.invalid && emailControl.dirty}"/>
+            <div *ngIf="emailControl.invalid && emailControl.dirty" class="invalid-feedback">
+                <div *ngIf="emailControl && emailControl.value !== '' && emailControl.invalid">Email is required</div>
+                <div *ngIf="emailControl.value !== '' && emailControl.invalid">Email must be a valid email address</div>
+            </div>
+            <em><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></em>
+        </div>   
+        <div class="form-input"> <br />
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="formModel.subject" required/>
+        </div>
+        <div class="form-input"> <br />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="formModel.message" required></textarea>
+        </div> <br />
+        <button [disabled]="contactForm.invalid" type="submit" class="form-button">Submit</button>
+    </form>
+</section> <br />
+<strong><h1>Thank you for contacting us!</h1></strong> 
+
+<footer> © 2022 Shades. All rights reserved.</footer>

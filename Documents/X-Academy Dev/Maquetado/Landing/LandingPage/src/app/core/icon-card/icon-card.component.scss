@@ -1,0 +1,37 @@
+.feature {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.feature i {
+    border: none 2px #2e86fd;
+    font-size: 45px;
+
+}
+
+.feature h4 {
+    margin: 0;
+    font-size: 24px;
+    font-style: inherit;
+}
+
+.feature p {
+    color: #6f7880;
+    font-size: 18px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+i {
+    color: #2e86fd;
+    font-weight: 600;
+}

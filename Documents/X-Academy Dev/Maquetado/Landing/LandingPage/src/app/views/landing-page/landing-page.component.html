@@ -1,0 +1,11 @@
+<main>
+    <app-presentation></app-presentation>   
+    <div class="container">
+        <button [disabled]="disableBtn" (click)="SumOne()">+1</button>
+        <div>👍 {{counter}}</div>
+    </div>
+    <section class="features">
+        <app-icon-card *ngFor="let feature of features" [icon]="feature.icon" [title]="feature.title" [description]="feature.description"></app-icon-card> 
+    </section>
+</main>
+<footer> © 2022 Shades. All rights reserved.</footer>
